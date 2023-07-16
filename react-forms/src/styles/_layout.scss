@@ -1,0 +1,37 @@
+@use "variables" as v;
+
+.container {
+    width: 100vw;
+    height: 150vh;
+    padding: 20px;
+    background-color: v.$fondo;
+    main{
+        border-radius: 20px;
+        width: 50%;
+        max-width: 500px;
+        margin: 0 auto;
+        border: 3px solid v.$borde;
+
+        h3 {
+        font-family: v.$font-family;
+        font-weight: 500;
+        color: v.$letra;
+        text-align: center;
+        letter-spacing: 0.03rem;
+        padding: 0.5rem;
+        }
+        > p {
+            font-family: v.$font-family;
+            color: v.$letra;
+            font-size: 1.2 rem;
+            font-weight: 300;
+            text-align: center;
+            padding: 1rem;
+            span {
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
