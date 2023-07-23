@@ -4,6 +4,8 @@
     input[type = "text"],
     input[type = "email"],
     input[type = "password"],
+    input[type = "number"],
+    input[type = "date"],
     select
     {
         font-family: v.$font-family;
@@ -13,5 +15,21 @@
         border-radius: 5px;
         background-color: v.$barra;
         color: v.$letra;
+
+        //Marca el elemento con error
+        &:invalid[data-focused="true"] {
+            border-bottom: 1px solid v.$letra;
+            color: v.$letra ;
+          }
+      
+          // Muestra el mensaje de error
+        &:invalid[data-focused="true"] ~ p {
+            display: block;
+          }
+
+        &.error-forgot-input{
+          border: 3px solid red;
+        }
+
     }
 }

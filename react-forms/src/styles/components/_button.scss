@@ -2,11 +2,12 @@
 
 @mixin button(){
     button{
-        text-align: center;
+        text-align:center;
         margin: auto;
         display: flex;
+        flex-direction: row;
         font-size: 1.2rem;
-        padding: 1rem 2.5rem;
+        padding: 1rem 2.0rem;
         border: none;
         outline: none;
         border-radius: 40px / 70px;
@@ -18,16 +19,28 @@
         transition: 0.6s;
         box-shadow: 0px 0px 60px #1f4c65;
         // -webkit-box-reflect: below 10px linear-gradient(to bottom, #00000000, #00000066);
+        &:disabled {
+          opacity: 0.35;
+          cursor: wait;
+        }
       }
       
       button:active {
         scale: 0.92;
+        border:1px solid #eaeaea;
       }
       
       button:hover {
         background: #021d4e;
         background: linear-gradient(270deg, #021d4eae 0%, #1fd7e8df 60%);
         color: #040426;
-      }
-}
+        border:1px solid #eaeaea;
+        
 
+      }
+      button:focus {
+        border:1px solid #eaeaea;
+        background: linear-gradient(270deg, #021d4eae 0%, #1fd7e8df 60%);   
+      
+}
+}

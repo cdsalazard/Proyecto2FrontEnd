@@ -4,5 +4,16 @@
     margin: 0 1.2rem;
     border-radius: 20px;
     border: 3px solid v.$borde;
-
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: linear-gradient(#212121, #212121) padding-box,
+            linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    
 }
+

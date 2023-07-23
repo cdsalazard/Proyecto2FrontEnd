@@ -2,10 +2,20 @@
 
 @mixin error(){
     .error{
-    color: v.$boton;
+    color: v.$borde;
     font-family: v.$font-family;
     font-size: 0.8rem;
     text-align: right;
     margin-top: 0.1rem;
 }
+    .error-message {
+        color: v.$borde;
+        font-family: v.$font-family;
+        font-size: 0.8rem;
+        text-align: right;
+        margin-top: 0.1rem;
+       
+    }
+
+
 }
