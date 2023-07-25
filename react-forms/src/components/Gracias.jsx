@@ -1,4 +1,4 @@
-import React from 'react'
+import './Gracias.css'
 
 const Gracias = () => {
   return (

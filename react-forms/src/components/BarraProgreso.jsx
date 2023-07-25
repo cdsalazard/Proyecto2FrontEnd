@@ -1,3 +1,6 @@
+import "./BarraProgreso.css"
+import PropTypes from "prop-types";
+
 function calcularProgreso(progress) {
     if (progress === 1) {
         return '0%';
@@ -35,4 +38,11 @@ const BarraProgreso = ({ progress = 1 }) => {
   )
 }
 
-export default BarraProgreso
+BarraProgreso.propTypes = {
+  progress: PropTypes.number,
+};
+
+
+
+
+export default BarraProgreso;

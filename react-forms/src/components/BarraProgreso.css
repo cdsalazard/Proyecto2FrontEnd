@@ -1,0 +1,73 @@
+    main{
+        width: 100vw;
+        height: 150vh;
+        padding: 20px;
+        background-color: #fff;
+        
+
+        border-radius: 20px;
+        width: 50%;
+        max-width: 500px;
+        margin: 0 auto;
+        border: 3px solid  #fff;
+    border: 2px solid transparent;
+    background: linear-gradient(#212121, #212121) padding-box,
+    linear-gradient(0deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+        h2 {
+        font-family: sans-serif;
+        font-weight: 500;
+        color: #e81cff;
+        flex: auto;
+        text-align: center;
+        letter-spacing: 0.03rem;
+        padding: 0.5rem;
+        }
+      
+    }
+    
+    .progreso-contenedor {
+        text-align: center;
+        display: flex;
+        justify-content:space-between;
+        position: relative;
+        max-width: 100%;
+        width: 490px;
+        padding: 10px;
+    }
+
+    .progreso{
+        background-color: #40c9ff;
+        position: absolute;
+        top: 50%;
+        width: 50%;
+        left: 30;
+        transform: translateY(-50%);
+        height: 3px;
+        width: 50%;
+        transition: 0.4s ease;
+    }
+    .circle{
+        background-color: black;
+        color: #fff;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid #e81cff;
+        z-index: 1;
+    }
+    .circle.active{
+        background-color: black;
+        color: #fff;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid #40c9ff;
+        transform: 2.0s;
+    }

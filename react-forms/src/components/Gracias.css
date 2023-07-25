@@ -1,0 +1,29 @@
+main{
+    width: 100vw;
+    height: 150vh;
+    padding: 20px;
+    background-color: #fff;
+    
+
+    border-radius: 20px;
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 3px solid  #fff;
+border: 2px solid transparent;
+background: linear-gradient(#212121, #212121) padding-box,
+linear-gradient(0deg, transparent 35%,#e81cff, #40c9ff) border-box;
+border: 2px solid transparent;
+
+  
+}
+
+h2 {
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #e81cff;
+    flex: auto;
+    text-align: center;
+    letter-spacing: 0.03rem;
+    padding: 0.5rem;
+    }

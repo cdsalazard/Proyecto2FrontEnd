@@ -12,7 +12,8 @@ import Gracias from "./components/Gracias";
 const App = () => {
   const [step, setStep] = useState(1);
   const [formValues, setFormValues] = useState(initialValues);
-
+  const greeting = "Hello World";
+  
   const handleFormSubmit = (values) => {
     setFormValues({ ...formValues, ...values });
     setStep(step + 1);
@@ -72,7 +73,7 @@ const App = () => {
       {step === 7 && (
         <Gracias/>
       )}
-
+      <h1>{'Hello'}</h1>
     </div>
   );
 };
